@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+header {
+    height: 15vh;
+    width: 100%;
+    background: rgb(218, 27, 27);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.buscar {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.add {
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.map {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 85vh;
+    background: black;
+}
+
+.form {
+    border-radius: 10px;
+    z-index: 1000;
+    background: antiquewhite;
+    position: fixed;
+    width: 35%;
+   
+    top: 17vh;
+    left: 33vw;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.input:focus,
+.input:active,
+.input {
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-bottom: 1px solid gray;
+}
+
+.input {
+    padding: .2em 1em;
+    width: 50%;
+    height: 2em;
+    border-bottom: 1px solid gray;
+    background: #4f5c16d2;
+    color: white;
+}
+
+.input:hover {
+    border-bottom: 1px solid rgb(3, 4, 68);
+    color: rgb(7, 19, 71);
+}
+
+.input::placeholder {
+    color: rgb(8, 20, 58);
+    font-size: 1em;
+}
+
+.title {
+    font-size: 1.5em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 1.5em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.btn {
+    margin-top: 20px;
+    box-shadow: 1px 1px 3px black;
+    border: 1px inset gray;
+    padding: .9em 2em;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #4f5c16d2;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 3px cyan;
+    opacity: .9;
+    cursor: pointer;
+}
+
+@media (max-width: 580px) {
+    .input {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 1.1em;
+    }
+}
+
+#busca {
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #24292e;
+    vertical-align: middle;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid #e1e4e8;
+    border-radius: 15px;
+    outline: none;
+    box-shadow: rgba(225, 228, 232, 0.2) 0px 1px 0px 0px inset;
+}
+
+.buttonbusca {
+    background-color: #4f5c16d2;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin: 0;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.buttonbusca:hover,
+.buttonbusca:focus {
+    background-color: #07c;
+}
+
+.buttonbusca:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.buttonbusca:active {
+    background-color: #0064bd;
+    box-shadow: none;
+}
+
+#descricao {
+    resize: none;
+}
